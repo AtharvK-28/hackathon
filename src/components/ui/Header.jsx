@@ -15,7 +15,7 @@ const Header = () => {
       <div className="container-responsive">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/deals" className="flex items-center space-x-2">
             <div className="relative">
               <div className="h-8 w-8 rounded-lg bg-gradient-primary flex items-center justify-center shadow-elevation-2">
                 <Icon name="ShoppingBag" size={20} className="text-primary-foreground" />

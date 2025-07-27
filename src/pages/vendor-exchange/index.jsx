@@ -307,7 +307,7 @@ const VendorExchange = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              <Link to="/" className="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors">
+              <Link to="/deals" className="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors">
                 <Icon name="Home" size={20} />
                 <span className="font-semibold">Home</span>
               </Link>

@@ -45,7 +45,7 @@ const KarigarConnect = () => {
       applicants: 3,
       status: "open",
       postedAt: "2 hours ago",
-      foodImage: "/images/orange.jpeg"
+      foodImage: "/assets/images/orange.jpeg"
     },
     {
       id: 2,
@@ -67,7 +67,7 @@ const KarigarConnect = () => {
       applicants: 5,
       status: "open",
       postedAt: "4 hours ago",
-      foodImage: "/images/onions.jpeg"
+      foodImage: "/assets/images/onions.jpeg"
     },
     {
       id: 3,
@@ -89,7 +89,7 @@ const KarigarConnect = () => {
       applicants: 1,
       status: "open",
       postedAt: "1 day ago",
-      foodImage: "/images/idly_batter.jpeg"
+      foodImage: "/assets/images/idly_batter.jpeg"
     },
     {
       id: 4,
@@ -111,7 +111,7 @@ const KarigarConnect = () => {
       applicants: 7,
       status: "open",
       postedAt: "3 hours ago",
-      foodImage: "/images/rekha_chaat.jpeg"
+      foodImage: "/assets/images/rekha_chaat.jpeg"
     },
     {
       id: 5,
@@ -133,7 +133,7 @@ const KarigarConnect = () => {
       applicants: 2,
       status: "open",
       postedAt: "1 hour ago",
-      foodImage: "/images/schezwan_chutney.jpeg"
+      foodImage: "/assets/images/schezwan_chutney.jpeg"
     }
   ]);
 
@@ -151,8 +151,8 @@ const KarigarConnect = () => {
       hourlyRate: 400,
       availability: "Flexible",
       bio: "Expert dosa maker with 8 years experience. Trained under South Indian masters.",
-      image: "/images/amit_kumar.jpeg",
-      skillImage: "/images/idly_batter.jpeg",
+      image: "/assets/images/amit_kumar.jpeg",
+      skillImage: "/assets/images/idly_batter.jpeg",
       distance: "150m away",
       online: true
     },
@@ -168,8 +168,8 @@ const KarigarConnect = () => {
       hourlyRate: 150,
       availability: "Morning & Evening",
       bio: "Fast and efficient vegetable chopper. Can handle bulk prep for any cuisine.",
-      image: "/images/priya_sharma.jpeg",
-      skillImage: "/images/onions.jpeg",
+      image: "/assets/images/priya_sharma.jpeg",
+      skillImage: "/assets/images/onions.jpeg",
       distance: "300m away",
       online: true
     },
@@ -185,8 +185,8 @@ const KarigarConnect = () => {
       hourlyRate: 350,
       availability: "Evening Only",
       bio: "Chinese cuisine specialist with 12 years experience. Expert in wok cooking.",
-      image: "/images/Rajesh_patel.jpeg",
-      skillImage: "/images/schezwan_chutney.jpeg",
+      image: "/assets/images/Rajesh_patel.jpeg",
+      skillImage: "/assets/images/schezwan_chutney.jpeg",
       distance: "200m away",
       online: false
     },
@@ -202,8 +202,8 @@ const KarigarConnect = () => {
       hourlyRate: 180,
       availability: "Afternoon & Evening",
       bio: "Chaat specialist with perfect assembly skills. Known for beautiful garnishes.",
-      image: "/images/Sunita_devi.jpeg",
-      skillImage: "/images/rekha_chaat.jpeg",
+      image: "/assets/images/Sunita_devi.jpeg",
+      skillImage: "/assets/images/rekha_chaat.jpeg",
       distance: "100m away",
       online: true
     },
@@ -219,8 +219,8 @@ const KarigarConnect = () => {
       hourlyRate: 200,
       availability: "All Day",
       bio: "Juice stall expert with equipment knowledge. Great with customers and cash.",
-      image: "/images/Vikram_singh.jpeg",
-      skillImage: "/images/orange.jpeg",
+      image: "/assets/images/Vikram_singh.jpeg",
+      skillImage: "/assets/images/orange.jpeg",
       distance: "250m away",
       online: true
     }
@@ -322,7 +322,7 @@ const KarigarConnect = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              <Link to="/" className="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors">
+              <Link to="/deals" className="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors">
                 <Icon name="Home" size={20} />
                 <span className="font-semibold">Home</span>
               </Link>
