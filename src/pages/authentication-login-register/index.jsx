@@ -50,7 +50,7 @@ const AuthenticationPage = () => {
   const labels = {
     en: {
       title: "Welcome to Apna Mandi",
-      subtitle: "Connect with local suppliers and vendors",
+      subtitle: "India's Premier Street Food & Grocery Marketplace",
       sendOTP: "Send OTP",
       verifyLogin: "Verify & Login",
       completeRegistration: "Complete Registration",
@@ -60,7 +60,7 @@ const AuthenticationPage = () => {
     },
     hi: {
       title: "अपना मंडी में आपका स्वागत है",
-      subtitle: "स्थानीय आपूर्तिकर्ताओं और विक्रेताओं से जुड़ें",
+      subtitle: "भारत का प्रमुख स्ट्रीट फूड और किराना बाजार",
       sendOTP: "OTP भेजें",
       verifyLogin: "सत्यापित करें और लॉगिन करें",
       completeRegistration: "पंजीकरण पूरा करें",
@@ -405,6 +405,35 @@ const AuthenticationPage = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Continue as Guest */}
+        <div className="mt-6 text-center">
+          <div className="relative">
+            <div className="absolute inset-0 flex items-center">
+              <div className="w-full border-t border-border"></div>
+            </div>
+            <div className="relative flex justify-center text-xs uppercase">
+              <span className="bg-background px-2 text-muted-foreground">
+                {currentLanguage === 'en' ? 'or' : 'या'}
+              </span>
+            </div>
+          </div>
+          <Button
+            variant="outline"
+            onClick={() => navigate('/deals')}
+            className="mt-4 w-full"
+            size="lg"
+          >
+            <Icon name="Eye" size={16} className="mr-2" />
+            {currentLanguage === 'en' ? 'Continue as Guest' : 'अतिथि के रूप में जारी रखें'}
+          </Button>
+          <p className="text-xs text-muted-foreground mt-2">
+            {currentLanguage === 'en' 
+              ? 'Explore the app without creating an account' 
+              : 'बिना खाता बनाए ऐप का अन्वेषण करें'
+            }
+          </p>
         </div>
       </main>
     </div>

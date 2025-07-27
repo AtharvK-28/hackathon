@@ -30,7 +30,7 @@ const Virasaat = () => {
       topSeller: "Rekha's Khatta-Meetha Imli Masala",
       earnings: "10x increase in revenue",
       subscribers: 156,
-      image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400",
+      image: "/images/rekha_chaat.jpeg",
       icon: "🛍️"
     },
     {
@@ -42,7 +42,7 @@ const Virasaat = () => {
       topSeller: "Abdul Bhai ka Raaz – Nihari Masala",
       earnings: "International orders from expats",
       subscribers: 89,
-      image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400",
+      image: "/images/garam_masala_abdul.jpeg",
       icon: "📦"
     },
     {
@@ -54,7 +54,7 @@ const Virasaat = () => {
       topSeller: "Aaji's Teekhat Kolhapuri Masala",
       earnings: "10x increase in daily earnings",
       subscribers: 234,
-      image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400",
+      image: "/images/kolhapuri_chutney_sitagita.jpeg",
       icon: "🌶️"
     },
     {
@@ -66,7 +66,7 @@ const Virasaat = () => {
       topSeller: "TrainWale Chaat Masale – Tang with a Twist",
       earnings: "Full spice unit business",
       subscribers: 67,
-      image: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=400",
+      image: "/images/chaatmasala_kashi.jpeg",
       icon: "🧂"
     },
     {
@@ -78,7 +78,7 @@ const Virasaat = () => {
       topSeller: "Thatha's Sambhar Secret – Madurai Blend",
       earnings: "International recognition",
       subscribers: 123,
-      image: "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=400",
+      image: "/images/sambhar_podi_meenakshi.jpeg",
       icon: "🍲"
     }
   ];
@@ -101,7 +101,7 @@ const Virasaat = () => {
       category: "chutneys",
       location: "Dadar Station West",
       distance: "200m away",
-      image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400",
+      image: "/images/schezwan_chutney.jpeg",
       description: "The secret blend of 15 spices that made Aunty's Chinese Corner legendary. Perfect balance of heat, tang, and umami. Used by 50+ vendors across Mumbai.",
       ingredients: ["Red Chillies", "Garlic", "Ginger", "Soy Sauce", "Vinegar", "Secret Spice Blend"],
       usage: "2-3 tbsp per dosa, mix with regular chutney for authentic taste",
@@ -130,7 +130,7 @@ const Virasaat = () => {
       category: "masalas",
       location: "Bandra Market",
       distance: "500m away",
-      image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400",
+      image: "/images/vada_pav_masala.jpeg",
       description: "The legendary masala that made Ram's vada pav famous. Perfect blend of 12 spices including rare Kolhapuri chillies. Instant upgrade for any vada pav stall.",
       ingredients: ["Kolhapuri Red Chillies", "Coriander", "Cumin", "Black Pepper", "Garlic Powder", "Secret Spice Mix"],
       usage: "1 tsp per vada, mix with potato filling for authentic Kolhapuri taste",
@@ -159,7 +159,7 @@ const Virasaat = () => {
       category: "concentrates",
       location: "Andheri Station",
       distance: "300m away",
-      image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400",
+      image: "/images/pani_puri_paani.jpeg",
       description: "The secret paani that made Gupta's pani puri legendary. Perfect balance of sweet, sour, and spicy. Just dilute with water and serve.",
       ingredients: ["Tamarind", "Mint", "Coriander", "Green Chillies", "Rock Salt", "Secret Herbs"],
       usage: "Dilute 1:3 with water, add chopped mint and coriander before serving",
@@ -188,7 +188,7 @@ const Virasaat = () => {
       category: "masalas",
       location: "Dadar Station West",
       distance: "150m away",
-      image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400",
+      image: "/images/pav_bhaji_masala.jpeg",
       description: "The secret masala that made Mama's pav bhaji legendary. Perfect blend of spices that brings out the best in any vegetable mix.",
       ingredients: ["Cumin", "Coriander", "Red Chilli Powder", "Garam Masala", "Amchur", "Secret Spice Blend"],
       usage: "2 tbsp per kg of vegetables, add while cooking for authentic taste",

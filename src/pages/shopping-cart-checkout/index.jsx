@@ -56,7 +56,7 @@ const ShoppingCartCheckout = () => {
         acc.push({
           id: item.supplierName.replace(/\s+/g, '-').toLowerCase(),
           name: item.supplierName,
-          isVerified: true,
+        isVerified: true,
           distance: distance,
           estimatedDelivery: `${deliveryTime}-${deliveryTime + 10} min`,
           rating: rating.toFixed(1),
@@ -330,7 +330,7 @@ const ShoppingCartCheckout = () => {
           </Link>
         </div>
       </div>
-      
+
     </div>
   );
 };

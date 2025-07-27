@@ -974,7 +974,7 @@ Vendors will receive:
         </div>
 
         {/* Quick Actions Footer */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mt-6">
           <QuickActionButton
             title="Add Product"
             subtitle="List new items"
@@ -1006,6 +1006,14 @@ Vendors will receive:
             to="/virasaat"
             color="text-purple-600"
             bgColor="bg-purple-100"
+          />
+          <QuickActionButton
+            title="Karigar Connect"
+            subtitle="Find skilled workers"
+            icon="Wrench"
+            to="/karigar-connect"
+            color="text-red-600"
+            bgColor="bg-red-100"
           />
         </div>
       </div>

@@ -58,6 +58,15 @@ const Header = () => {
               </span>
             </Link>
             <Link 
+              to="/karigar-connect" 
+              className="nav-link group relative"
+            >
+              <span className="flex items-center space-x-1">
+                <Icon name="Wrench" size={16} className="group-hover:text-primary transition-colors" />
+                <span>Karigar Connect</span>
+              </span>
+            </Link>
+              <Link
               to="/cart" 
               className="nav-link group relative"
             >
@@ -65,7 +74,7 @@ const Header = () => {
                 <Icon name="ShoppingCart" size={16} className="group-hover:text-primary transition-colors" />
                 <span>Cart</span>
               </span>
-            </Link>
+              </Link>
             <Link 
               to="/orders" 
               className="nav-link group relative"
@@ -75,7 +84,7 @@ const Header = () => {
                 <span>Orders</span>
               </span>
             </Link>
-            <Link 
+                      <Link
               to="/dashboard" 
               className="nav-link group relative"
             >
@@ -83,7 +92,7 @@ const Header = () => {
                 <Icon name="BarChart3" size={16} className="group-hover:text-primary transition-colors" />
                 <span>Dashboard</span>
               </span>
-            </Link>
+                      </Link>
           </nav>
 
           {/* Right side actions */}
@@ -92,14 +101,14 @@ const Header = () => {
             <ThemeToggle className="hidden sm:flex" />
             
             {/* Mobile menu button */}
-            <Button
-              variant="ghost"
-              size="sm"
-              className="md:hidden"
+          <Button
+            variant="ghost"
+            size="sm"
+            className="md:hidden"
               aria-label="Toggle menu"
-            >
+          >
               <Icon name="Menu" size={20} />
-            </Button>
+          </Button>
 
             {/* Notification Center */}
             <NotificationCenter className="hidden sm:flex" />
@@ -108,7 +117,7 @@ const Header = () => {
             <AccountMenu className="hidden sm:flex" />
           </div>
         </div>
-      </div>
+        </div>
 
       {/* Mobile navigation overlay */}
       <div className="md:hidden">
@@ -128,10 +137,14 @@ const Header = () => {
                   <Icon name="Crown" size={16} />
                   <span className="text-sm">Virasaat</span>
                 </Link>
+                <Link to="/karigar-connect" className="flex items-center space-x-2 px-3 py-2 rounded-md hover:bg-muted transition-colors">
+                  <Icon name="Wrench" size={16} />
+                  <span className="text-sm">Karigar</span>
+                </Link>
                 <Link to="/cart" className="flex items-center space-x-2 px-3 py-2 rounded-md hover:bg-muted transition-colors">
                   <Icon name="ShoppingCart" size={16} />
                   <span className="text-sm">Cart</span>
-                </Link>
+                  </Link>
               </div>
               <div className="flex items-center space-x-2">
                 <ThemeToggle />

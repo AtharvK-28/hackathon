@@ -45,44 +45,44 @@ const DealDiscoveryShopping = () => {
   ];
 
   // Comprehensive grocery deals data
-  const mockDeals = [
+    const mockDeals = [
     // Fresh Morning Deals (Best quality, early morning)
-    {
-      id: 1,
+      {
+        id: 1,
       name: 'Fresh Tomatoes',
       category: 'vegetables',
-      price: 25,
+        price: 25,
       originalPrice: 35,
-      unit: 'kg',
-      availableQuantity: 50,
+        unit: 'kg',
+        availableQuantity: 50,
       supplierName: 'Fresh Harvest Co.',
       isVerified: true,
       rating: 4.8,
-      distance: 1.2,
-      image: 'https://images.unsplash.com/photo-1546470427-e5380e0b8b6e?w=400',
-      dealType: 'fresh-morning',
+        distance: 1.2,
+      image: '/images/tomato.jpeg',
+        dealType: 'fresh-morning',
       expiresAt: new Date(Date.now() + 4 * 60 * 60 * 1000), // 4 hours from now
       description: 'Farm fresh tomatoes, picked this morning'
-    },
-    {
-      id: 2,
+      },
+      {
+        id: 2,
       name: 'Green Bell Peppers',
       category: 'vegetables',
       price: 40,
       originalPrice: 60,
-      unit: 'kg',
+        unit: 'kg',
       availableQuantity: 30,
       supplierName: 'Fresh Harvest Co.',
-      isVerified: true,
+        isVerified: true,
       rating: 4.7,
       distance: 1.2,
-      image: 'https://images.unsplash.com/photo-1525607551316-5a9e1c8b3c3c?w=400',
-      dealType: 'fresh-morning',
+      image: '/images/green_bell_pepper.jpeg',
+        dealType: 'fresh-morning',
       expiresAt: new Date(Date.now() + 4 * 60 * 60 * 1000),
       description: 'Crisp and fresh bell peppers'
-    },
-    {
-      id: 3,
+      },
+      {
+        id: 3,
       name: 'Fresh Milk',
       category: 'dairy',
       price: 60,
@@ -92,31 +92,31 @@ const DealDiscoveryShopping = () => {
       supplierName: 'Dairy Fresh',
       isVerified: true,
       rating: 4.9,
-      distance: 0.8,
-      image: 'https://images.unsplash.com/photo-1550583724-b2692b85b150?w=400',
+        distance: 0.8,
+      image: '/images/milk.jpeg',
       dealType: 'fresh-morning',
       expiresAt: new Date(Date.now() + 3 * 60 * 60 * 1000),
       description: 'Pure cow milk, delivered fresh'
-    },
-    {
-      id: 4,
+      },
+      {
+        id: 4,
       name: 'Fresh Curd',
       category: 'dairy',
       price: 45,
       originalPrice: 65,
       unit: 'kg',
       availableQuantity: 40,
-      supplierName: 'Dairy Fresh',
-      isVerified: true,
+        supplierName: 'Dairy Fresh',
+        isVerified: true,
       rating: 4.8,
       distance: 0.8,
-      image: 'https://images.unsplash.com/photo-1550583724-b2692b85b150?w=400',
-      dealType: 'fresh-morning',
+      image: '/images/curd.jpeg',
+        dealType: 'fresh-morning',
       expiresAt: new Date(Date.now() + 3 * 60 * 60 * 1000),
       description: 'Homemade fresh curd'
-    },
-    {
-      id: 5,
+      },
+      {
+        id: 5,
       name: 'Fresh Coriander',
       category: 'herbs',
       price: 20,
@@ -127,7 +127,7 @@ const DealDiscoveryShopping = () => {
       isVerified: false,
       rating: 4.4,
       distance: 1.5,
-      image: 'https://images.unsplash.com/photo-1583663848850-46af132dc08e?w=400',
+      image: '/images/coriander.jpeg',
       dealType: 'fresh-morning',
       expiresAt: new Date(Date.now() + 2 * 60 * 60 * 1000),
       description: 'Freshly harvested coriander'
@@ -146,7 +146,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.6,
       distance: 2.1,
-      image: 'https://images.unsplash.com/photo-1528825871115-3581a5387919?w=400',
+      image: '/images/ripe_bananas.jpeg',
       dealType: 'end-of-day',
       expiresAt: new Date(Date.now() + 2 * 60 * 60 * 1000),
       description: 'Ripe bananas, perfect for immediate use'
@@ -163,7 +163,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.5,
       distance: 1.2,
-      image: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=400',
+      image: '/images/spinach.jpeg',
       dealType: 'end-of-day',
       expiresAt: new Date(Date.now() + 1 * 60 * 60 * 1000),
       description: 'Fresh spinach, use today'
@@ -180,7 +180,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.7,
       distance: 0.8,
-      image: 'https://images.unsplash.com/photo-1550583724-b2692b85b150?w=400',
+      image: '/images/paneer.jpeg',
       dealType: 'end-of-day',
       expiresAt: new Date(Date.now() + 1 * 60 * 60 * 1000),
       description: 'Fresh paneer, best used today'
@@ -199,7 +199,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.8,
       distance: 3.2,
-      image: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400',
+      image: '/images/basmati_rice.jpeg',
       dealType: 'bulk-discount',
       minQuantity: 10,
       description: 'Premium basmati rice, bulk order discount'
@@ -216,7 +216,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.6,
       distance: 2.1,
-      image: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=400',
+      image: '/images/red_onions.jpeg',
       dealType: 'bulk-discount',
       minQuantity: 5,
       description: 'Red onions, bulk purchase discount'
@@ -233,7 +233,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.5,
       distance: 2.1,
-      image: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=400',
+      image: '/images/potatoes.jpeg',
       dealType: 'bulk-discount',
       minQuantity: 5,
       description: 'Fresh potatoes, bulk order available'
@@ -250,7 +250,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.7,
       distance: 2.8,
-      image: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400',
+      image: '/images/toor_dal.jpeg',
       dealType: 'bulk-discount',
       minQuantity: 5,
       description: 'Premium toor dal, bulk discount'
@@ -259,33 +259,33 @@ const DealDiscoveryShopping = () => {
     // Regular Deals (Standard pricing)
     {
       id: 13,
-      name: 'Green Chilies',
+        name: 'Green Chilies',
       category: 'vegetables',
-      price: 80,
+        price: 80,
       originalPrice: 90,
-      unit: 'kg',
+        unit: 'kg',
       availableQuantity: 30,
       supplierName: 'Spice Garden',
       isVerified: false,
       rating: 4.4,
       distance: 1.8,
-      image: 'https://images.unsplash.com/photo-1583663848850-46af132dc08e?w=400',
+      image: '/images/green_chilly.jpeg',
       dealType: 'regular',
       description: 'Fresh green chilies'
     },
     {
       id: 14,
       name: 'Ginger',
-      category: 'vegetables',
+        category: 'vegetables',
       price: 120,
       originalPrice: null,
       unit: 'kg',
       availableQuantity: 25,
       supplierName: 'Spice Garden',
       isVerified: false,
-      rating: 4.3,
+        rating: 4.3,
       distance: 1.8,
-      image: 'https://images.unsplash.com/photo-1599909533730-b2b8e8b7e5e5?w=400',
+      image: '/images/ginger.jpeg',
       dealType: 'regular',
       description: 'Fresh ginger root'
     },
@@ -301,30 +301,30 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.4,
       distance: 1.8,
-      image: 'https://images.pexels.com/photos/4198015/pexels-photo-4198015.jpeg',
+      image: '/images/turmeric_powder.jpeg',
       dealType: 'regular',
       description: 'Pure turmeric powder'
     },
     {
       id: 16,
-      name: 'Mustard Oil',
+        name: 'Mustard Oil',
       category: 'oil',
       price: 180,
       originalPrice: null,
-      unit: 'liter',
+        unit: 'liter',
       availableQuantity: 100,
       supplierName: 'Oil Traders',
       isVerified: true,
       rating: 4.6,
       distance: 2.5,
-      image: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400',
+      image: '/images/mustard_oil.jpeg',
       dealType: 'regular',
       description: 'Pure mustard oil'
     },
     {
       id: 17,
       name: 'Ghee',
-      category: 'oil',
+        category: 'oil',
       price: 600,
       originalPrice: null,
       unit: 'kg',
@@ -333,7 +333,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.8,
       distance: 0.8,
-      image: 'https://images.unsplash.com/photo-1550583724-b2692b85b150?w=400',
+      image: '/images/Ghee_1.jpg',
       dealType: 'regular',
       description: 'Pure cow ghee'
     },
@@ -349,7 +349,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.5,
       distance: 2.8,
-      image: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400',
+      image: '/images/Moong dal_1.jpg',
       dealType: 'regular',
       description: 'Yellow moong dal'
     },
@@ -364,8 +364,8 @@ const DealDiscoveryShopping = () => {
       supplierName: 'Pulse Traders',
       isVerified: true,
       rating: 4.6,
-      distance: 2.8,
-      image: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400',
+        distance: 2.8,
+      image: '/images/Chana dal_1.jpg',
       dealType: 'regular',
       description: 'Split chickpea dal'
     },
@@ -381,7 +381,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.7,
       distance: 3.2,
-      image: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400',
+      image: '/images/Wheat flour_1.jpg',
       dealType: 'regular',
       description: 'Fine wheat flour'
     },
@@ -397,7 +397,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.5,
       distance: 3.2,
-      image: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400',
+      image: '/images/Sugar_1.jpg',
       dealType: 'regular',
       description: 'Refined white sugar'
     },
@@ -413,7 +413,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.3,
       distance: 1.8,
-      image: 'https://images.pexels.com/photos/4198015/pexels-photo-4198015.jpeg',
+      image: '/images/Salt_1.jpg',
       dealType: 'regular',
       description: 'Iodized table salt'
     },
@@ -429,7 +429,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.8,
       distance: 1.8,
-      image: 'https://images.pexels.com/photos/4198015/pexels-photo-4198015.jpeg',
+      image: '/images/Black pepper_1.jpg',
       dealType: 'regular',
       description: 'Whole black peppercorns'
     },
@@ -442,10 +442,10 @@ const DealDiscoveryShopping = () => {
       unit: 'kg',
       availableQuantity: 40,
       supplierName: 'Spice Junction',
-      isVerified: true,
+        isVerified: true,
       rating: 4.6,
       distance: 1.8,
-      image: 'https://images.pexels.com/photos/4198015/pexels-photo-4198015.jpeg',
+      image: '/images/Cumin seeds_1.jpg',
       dealType: 'regular',
       description: 'Jeera seeds'
     },
@@ -455,20 +455,20 @@ const DealDiscoveryShopping = () => {
       category: 'spices',
       price: 800,
       originalPrice: null,
-      unit: 'kg',
+        unit: 'kg',
       availableQuantity: 20,
       supplierName: 'Spice Junction',
       isVerified: true,
       rating: 4.9,
       distance: 1.8,
-      image: 'https://images.pexels.com/photos/4198015/pexels-photo-4198015.jpeg',
+      image: '/images/Cardamom.jpeg',
       dealType: 'regular',
       description: 'Green cardamom pods'
     },
     {
       id: 26,
       name: 'Cinnamon',
-      category: 'spices',
+        category: 'spices',
       price: 500,
       originalPrice: null,
       unit: 'kg',
@@ -477,7 +477,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.7,
       distance: 1.8,
-      image: 'https://images.pexels.com/photos/4198015/pexels-photo-4198015.jpeg',
+      image: '/images/cinnamon.jpeg',
       dealType: 'regular',
       description: 'Cinnamon sticks'
     },
@@ -493,7 +493,7 @@ const DealDiscoveryShopping = () => {
       isVerified: false,
       rating: 4.4,
       distance: 1.5,
-      image: 'https://images.unsplash.com/photo-1583663848850-46af132dc08e?w=400',
+      image: '/images/mint_leaves.jpeg',
       dealType: 'regular',
       description: 'Fresh mint leaves'
     },
@@ -509,7 +509,7 @@ const DealDiscoveryShopping = () => {
       isVerified: false,
       rating: 4.3,
       distance: 1.5,
-      image: 'https://images.unsplash.com/photo-1583663848850-46af132dc08e?w=400',
+      image: '/images/curry_leaves.jpeg',
       dealType: 'regular',
       description: 'Fresh curry leaves'
     },
@@ -525,7 +525,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.8,
       distance: 3.5,
-      image: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400',
+      image: '/images/almonds.jpeg',
       dealType: 'regular',
       description: 'Premium almonds'
     },
@@ -541,7 +541,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.7,
       distance: 3.5,
-      image: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400',
+      image: '/images/cashew.jpeg',
       dealType: 'regular',
       description: 'Whole cashews'
     },
@@ -557,7 +557,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.6,
       distance: 3.5,
-      image: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400',
+      image: '/images/raisins.jpeg',
       dealType: 'regular',
       description: 'Black raisins'
     },
@@ -573,7 +573,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.5,
       distance: 2.8,
-      image: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400',
+      image: '/images/tea_leaves.jpeg',
       dealType: 'regular',
       description: 'Assam tea leaves'
     },
@@ -587,9 +587,9 @@ const DealDiscoveryShopping = () => {
       availableQuantity: 45,
       supplierName: 'Beverage Co.',
       isVerified: true,
-      rating: 4.7,
+        rating: 4.7,
       distance: 2.8,
-      image: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400',
+      image: '/images/coffee_beans.jpeg',
       dealType: 'regular',
       description: 'Arabica coffee beans'
     },
@@ -606,7 +606,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.6,
       distance: 1.2,
-      image: 'https://images.unsplash.com/photo-1447175008436-170170e8aeaa?w=400',
+      image: '/images/carrot.jpeg',
       dealType: 'regular',
       description: 'Fresh orange carrots'
     },
@@ -622,7 +622,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.5,
       distance: 1.2,
-      image: 'https://images.unsplash.com/photo-1447175008436-170170e8aeaa?w=400',
+      image: '/images/cucumber.jpeg',
       dealType: 'regular',
       description: 'Fresh green cucumbers'
     },
@@ -638,7 +638,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.4,
       distance: 1.2,
-      image: 'https://images.unsplash.com/photo-1447175008436-170170e8aeaa?w=400',
+      image: '/images/cauliflower.jpeg',
       dealType: 'regular',
       description: 'Fresh white cauliflower'
     },
@@ -654,7 +654,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.3,
       distance: 1.2,
-      image: 'https://images.unsplash.com/photo-1447175008436-170170e8aeaa?w=400',
+      image: '/images/cabbage.jpeg',
       dealType: 'regular',
       description: 'Fresh green cabbage'
     },
@@ -670,7 +670,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.4,
       distance: 1.2,
-      image: 'https://images.unsplash.com/photo-1447175008436-170170e8aeaa?w=400',
+      image: '/images/brinjal.jpeg',
       dealType: 'regular',
       description: 'Fresh purple brinjal'
     },
@@ -686,7 +686,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.5,
       distance: 1.2,
-      image: 'https://images.unsplash.com/photo-1447175008436-170170e8aeaa?w=400',
+      image: '/images/lady_finger.jpeg',
       dealType: 'regular',
       description: 'Fresh lady finger'
     },
@@ -702,7 +702,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.3,
       distance: 1.2,
-      image: 'https://images.unsplash.com/photo-1447175008436-170170e8aeaa?w=400',
+      image: '/images/bottle_gourd.jpeg',
       dealType: 'regular',
       description: 'Fresh bottle gourd'
     },
@@ -718,7 +718,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.4,
       distance: 1.2,
-      image: 'https://images.unsplash.com/photo-1447175008436-170170e8aeaa?w=400',
+      image: '/images/ridge_gourd.jpeg',
       dealType: 'regular',
       description: 'Fresh ridge gourd'
     },
@@ -734,7 +734,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.2,
       distance: 1.2,
-      image: 'https://images.unsplash.com/photo-1447175008436-170170e8aeaa?w=400',
+      image: '/images/pumpkin.jpeg',
       dealType: 'regular',
       description: 'Fresh orange pumpkin'
     },
@@ -750,7 +750,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.6,
       distance: 1.2,
-      image: 'https://images.unsplash.com/photo-1447175008436-170170e8aeaa?w=400',
+      image: '/images/sweet_potato.jpeg',
       dealType: 'regular',
       description: 'Fresh sweet potatoes'
     },
@@ -766,7 +766,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.3,
       distance: 1.2,
-      image: 'https://images.unsplash.com/photo-1447175008436-170170e8aeaa?w=400',
+      image: '/images/yam.jpeg',
       dealType: 'regular',
       description: 'Fresh yam'
     },
@@ -782,7 +782,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.4,
       distance: 1.2,
-      image: 'https://images.unsplash.com/photo-1447175008436-170170e8aeaa?w=400',
+      image: '/images/taro_root.jpeg',
       dealType: 'regular',
       description: 'Fresh taro root'
     },
@@ -796,10 +796,10 @@ const DealDiscoveryShopping = () => {
       unit: 'kg',
       availableQuantity: 40,
       supplierName: 'Fruit Paradise',
-      isVerified: true,
+        isVerified: true,
       rating: 4.7,
       distance: 2.1,
-      image: 'https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=400',
+      image: '/images/apple.jpeg',
       dealType: 'regular',
       description: 'Fresh red apples'
     },
@@ -811,11 +811,11 @@ const DealDiscoveryShopping = () => {
       originalPrice: null,
       unit: 'kg',
       availableQuantity: 60,
-      supplierName: 'Fruit Paradise',
+        supplierName: 'Fruit Paradise',
       isVerified: true,
       rating: 4.5,
       distance: 2.1,
-      image: 'https://images.unsplash.com/photo-1547514701-42782101795e?w=400',
+      image: '/images/orange.jpeg',
       dealType: 'regular',
       description: 'Fresh sweet oranges'
     },
@@ -827,12 +827,12 @@ const DealDiscoveryShopping = () => {
       price: 400,
       originalPrice: null,
       unit: 'kg',
-      availableQuantity: 30,
+        availableQuantity: 30,
       supplierName: 'Dairy Fresh',
       isVerified: true,
       rating: 4.8,
       distance: 0.8,
-      image: 'https://images.unsplash.com/photo-1550583724-b2692b85b150?w=400',
+      image: '/images/butter.jpeg',
       dealType: 'regular',
       description: 'Fresh butter'
     },
@@ -849,7 +849,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.6,
       distance: 1.8,
-      image: 'https://images.pexels.com/photos/4198015/pexels-photo-4198015.jpeg',
+      image: '/images/red_chilly.jpeg',
       dealType: 'regular',
       description: 'Pure red chili powder'
     },
@@ -865,7 +865,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.7,
       distance: 1.8,
-      image: 'https://images.pexels.com/photos/4198015/pexels-photo-4198015.jpeg',
+      image: '/images/garam_masala.jpeg',
       dealType: 'regular',
       description: 'Aromatic garam masala'
     },
@@ -882,7 +882,7 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.6,
       distance: 3.2,
-      image: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400',
+      image: '/images/brown rice.jpeg',
       dealType: 'regular',
       description: 'Healthy brown rice'
     },
@@ -898,26 +898,9 @@ const DealDiscoveryShopping = () => {
       isVerified: true,
       rating: 4.5,
       distance: 3.2,
-      image: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400',
+      image: '/images/jaggery.jpeg',
       dealType: 'regular',
       description: 'Natural jaggery'
-    },
-    // Additional Herbs
-    {
-      id: 53,
-      name: 'Basil Leaves',
-      category: 'herbs',
-      price: 100,
-      originalPrice: null,
-      unit: 'kg',
-      availableQuantity: 20,
-      supplierName: 'Green Garden',
-      isVerified: false,
-      rating: 4.5,
-      distance: 1.5,
-      image: 'https://images.unsplash.com/photo-1583663848850-46af132dc08e?w=400',
-      dealType: 'regular',
-      description: 'Fresh basil leaves'
     }
   ];
 
@@ -995,7 +978,7 @@ const DealDiscoveryShopping = () => {
 
   const handleCategoryToggle = (categoryId) => {
     setFilters(prev => ({
-      ...prev,
+        ...prev,
       categories: prev.categories.includes(categoryId)
         ? prev.categories.filter(id => id !== categoryId)
         : [...prev.categories, categoryId]
@@ -1042,28 +1025,28 @@ const DealDiscoveryShopping = () => {
         <title>Deals & Shopping - Apna Mandi</title>
         <meta name="description" content="Discover amazing grocery deals from local suppliers" />
       </Helmet>
-      
-      <Header />
-      <LocationHeader />
 
+        <Header />
+        <LocationHeader />
+        
       {/* Main Content */}
       <div className="flex flex-col lg:flex-row min-h-[calc(100vh-120px)]">
         {/* Left Side - Deals Content */}
         <div className={`flex-1 ${isMapVisible ? 'lg:max-w-[calc(100%-400px)]' : 'lg:max-w-full'}`}>
           {/* Search and Filter Header */}
           <div className="bg-background border-b border-border">
-            <SearchHeader 
+        <SearchHeader
               searchQuery={searchQuery}
-              onSearch={handleSearch}
+          onSearch={handleSearch}
               onMapToggle={() => setIsMapVisible(!isMapVisible)}
               isMapVisible={isMapVisible}
-              onFilterClick={() => setIsFilterPanelOpen(true)}
-            />
-            
+          onFilterClick={() => setIsFilterPanelOpen(true)}
+        />
+
             {/* Filter Chips */}
             <div className="px-4 py-3">
-              <FilterChips 
-                categories={categories}
+        <FilterChips
+          categories={categories}
                 selectedCategories={filters.categories}
                 onCategoryToggle={handleCategoryToggle}
                 onDealTypeChange={handleDealTypeChange}
@@ -1119,20 +1102,20 @@ const DealDiscoveryShopping = () => {
                 </div>
 
                 {/* Deals Grid */}
-                <DealsGrid 
-                  deals={filteredDeals}
-                  onAddToCart={handleAddToCart}
-                  onQuantityChange={handleQuantityChange}
-                />
+            <DealsGrid
+              deals={filteredDeals}
+              onAddToCart={handleAddToCart}
+              onQuantityChange={handleQuantityChange}
+            />
               </>
             )}
           </div>
-        </div>
+          </div>
 
         {/* Right Side - Map View */}
         {isMapVisible && (
           <div className="lg:w-[400px] lg:border-l border-border">
-            <MapView 
+            <MapView
               suppliers={suppliers}
               isVisible={true}
               onToggle={() => setIsMapVisible(false)}
@@ -1140,16 +1123,16 @@ const DealDiscoveryShopping = () => {
             />
           </div>
         )}
-      </div>
+        </div>
 
       {/* Filter Panel Modal */}
-      <FilterPanel
-        isOpen={isFilterPanelOpen}
-        onClose={() => setIsFilterPanelOpen(false)}
-        filters={filters}
-        onApplyFilters={handleFilterChange}
-      />
-    </div>
+        <FilterPanel
+          isOpen={isFilterPanelOpen}
+          onClose={() => setIsFilterPanelOpen(false)}
+          filters={filters}
+          onApplyFilters={handleFilterChange}
+        />
+      </div>
   );
 };
 

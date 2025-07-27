@@ -287,7 +287,7 @@ const VendorDashboard = () => {
         </div>
 
         {/* Quick Actions */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
           <QuickActionButton
             title="Vendor Exchange"
             subtitle="Reduce waste, increase profits"
@@ -303,6 +303,14 @@ const VendorDashboard = () => {
             to="/virasaat"
             color="text-purple-600"
             bgColor="bg-purple-100"
+          />
+          <QuickActionButton
+            title="Karigar Connect"
+            subtitle="Find skilled kitchen help"
+            icon="Wrench"
+            to="/karigar-connect"
+            color="text-orange-600"
+            bgColor="bg-orange-100"
           />
           <QuickActionButton
             title="Order History"

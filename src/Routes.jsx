@@ -11,6 +11,7 @@ import OrderTrackingHistory from "pages/order-tracking-history";
 import SupplierDashboard from "pages/supplier-dashboard";
 import VendorExchange from "pages/vendor-exchange";
 import Virasaat from "pages/virasaat";
+import KarigarConnect from "pages/karigar-connect";
 import NotFound from "pages/NotFound";
 import Profile from "pages/profile";
 
@@ -21,7 +22,8 @@ const Routes = () => {
       <ScrollToTop />
       <RouterRoutes>
         {/* Define your routes here */}
-        <Route path="/" element={<DealDiscoveryShopping />} />
+        <Route path="/" element={<AuthenticationLoginRegister />} />
+        <Route path="/login" element={<AuthenticationLoginRegister />} />
         <Route path="/deals" element={<DealDiscoveryShopping />} />
         <Route path="/cart" element={<ShoppingCartCheckout />} />
         <Route path="/orders" element={<OrderTrackingHistory />} />
@@ -29,6 +31,7 @@ const Routes = () => {
         <Route path="/profile" element={<Profile />} />
         <Route path="/vendor-exchange" element={<VendorExchange />} />
         <Route path="/virasaat" element={<Virasaat />} />
+        <Route path="/karigar-connect" element={<KarigarConnect />} />
         {/* Legacy routes for backward compatibility */}
         <Route path="/vendor-dashboard" element={<VendorDashboard />} />
         <Route path="/deal-discovery-shopping" element={<DealDiscoveryShopping />} />
